@@ -1,6 +1,6 @@
 ---
 name: ios-hig-design-guide
-description: Build, update, and apply iOS design specifications using Apple Human Interface Guidelines (HIG) source data. Use when a task asks for iOS UI/UX rules, Apple design standards, component behavior, accessibility constraints, interaction patterns, or feature-level design-spec writing grounded in official HIG pages.
+description: "从 Apple Human Interface Guidelines 官方来源提炼 iOS UI/UX、组件行为、可访问性、交互和功能级设计规范。用户需要有 HIG 依据的 iOS 设计或评审时使用。不用于 Android、普通网页、无界面后端或与 iOS 设计规范无关的 Swift 代码修改。"
 ---
 
 # iOS HIG Design Guide
@@ -16,8 +16,10 @@ Use this skill to produce iOS design recommendations that stay close to official
 Run:
 
 ```bash
-python3 scripts/sync_apple_hig_sources.py --skill-dir .
+python3 "<当前 Skill 绝对目录>/scripts/sync_apple_hig_sources.py" --skill-dir "<当前 Skill 绝对目录>"
 ```
+
+首次同步会生成下列 raw、fulltext、curated 与 catalog 文件，它们不是随包必带资源。文件缺失时先同步，失败则列出缺失项，不宣称已读取。脚本当前会写 Skill 的 references 目录，因此安装目录需要可写；只读安装需复制到任务目录再同步。
 
 ## Source of truth
 
