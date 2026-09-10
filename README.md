@@ -1,6 +1,6 @@
 # ios-hig-design-guide-skill
 
-Open-source agent skill for iOS design specifications based on Apple Human Interface Guidelines (HIG).
+依据官方设计规范与真实来源，梳理 iOS 界面的组件行为、交互、可访问性和设计要求。
 
 ## Install
 
